@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inizio | Clothing Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">INI<span>ZIO</span></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <i ><a href="https://wa.me/9645141508" class="fa-brands fa-whatsapp" ></a></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Fresh Style for <span>Fresh Start</span></h1>
+            <h3>Quality Green Fashion</h3>
+            <p>Elevate your wardrobe with our curated selection of premium fabrics and timeless designs. Discover the art of perfect dressing.</p>
+            <div class="btn-box">
+                <a href="#collection" class="btn">View Store</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection" id="collection">
+        <h2 class="heading">Our <span>Store</span></h2>
+        <div class="product-container">
+            
+            <div class="product-card">
+                <span class="tag">New Arrival</span> 
+                <div class="product-img">
+                    <img src="/Day 1/new-web/boys2.jpg" alt="T-Shirt">
+                </div>
+                <h3>Classic Polo</h3>
+                <p>₹799</p>
+                <button class="buy-btn" onclick="sendWhatsApp('Classic Polo', '799')">
+                    
+                    <i class="fa-brands fa-whatsapp"></i> Buy via WhatsApp
+                </button>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">Hot Sale</span>
+                <div class="product-img">
+                    <img src="/Day 1/new-web/boys.jpg" alt="Jacket">
+                </div>
+                <h3>Leather Jacket</h3>
+                <p>₹2,999</p>
+                <button class="buy-btn" onclick="sendWhatsApp('Leather Jacket', '2,999')">
+                    <i class="fa-brands fa-whatsapp"></i> Buy via WhatsApp
+                </button>
+            </div>
+
+            <div class="product-card">
+                <span class="tag">Limited</span>
+                <div class="product-img">
+                    <img src="/Day 1/new-web/shoe.jpg" alt="Shoes">
+                </div>
+                <h3>Green Sneakers</h3>
+                <p>₹1,899</p>
+                <button class="buy-btn" onclick="sendWhatsApp('Green Sneakers', '1,899')">
+                    <i class="fa-brands fa-whatsapp"></i> Buy via WhatsApp
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="How can we help you?" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer style="text-align: center; padding: 2rem; background: var(--dark-green); color: white;">
+        <p>&copy; 2024 Green Leaf Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
